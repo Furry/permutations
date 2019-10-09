@@ -68,5 +68,5 @@ if __name__ == "__main__":
 	print("* Done.")
 
 # Copyright © 2019 Brendan Hersh. All rights reserved.
-# Forked from x's article (https://www.geeksforgeeks.org/print-all-combinations-of-given-length/)
+# Forked from ChitraNayal's article (https://www.geeksforgeeks.org/print-all-combinations-of-given-length/)
 # Code contributed from mgilson on Stack Overflow <3
