@@ -24,9 +24,10 @@ git clone https://github.com/bdnh/permutations.git
 
 Open `permutations.py` with a text editor and change the variables from lines 23-29 to your desired preferences. *Note: if the output file name does not already exist, it will be created. Do not use an existing text file or risk data loss.*
 
-Save the file once you're done, then `cd` to the enclosing folder. [Need help using cd?](http://www.linfo.org/cd.html) Then run:
+Save the file once you're done, then `cd` to the enclosing folder. Then run:
 ```shell
 python permutations.py
 ```
+*[Need help using cd?](http://www.linfo.org/cd.html)*
 
 Enjoy! ✨
