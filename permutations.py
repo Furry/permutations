@@ -1,4 +1,4 @@
-import os, sys
+import os, sys, ctypes
 
 def printAllKLength(set, k): 
 
@@ -8,7 +8,6 @@ def printAllKLength(set, k):
 def printAllKLengthRec(set, prefix, n, k): 
 	
 	if (k == 0) : 
-		print(prefix)
 		f.write('\n')
 		f.write(prefix)
 		return
@@ -23,7 +22,7 @@ if __name__ == "__main__":
 	filename = 'output.txt'
 	# Change this to the name of your output file. If it does not exist, it will be created.
 
-	k = 5
+	k = 4
 	# Change this to the desired length of your outputted strings.
 
 	strings = 1
@@ -44,17 +43,29 @@ if __name__ == "__main__":
 		strings = numbers
 	elif (strings == 3):
 		strings = characters
+	else:
+		ctypes.windll.user32.MessageBoxW(0, "`strings` must be a value 1, 2, or 3.", "Fatal Error", 0)
+		raise SyntaxError("`strings` must be a value 1, 2, or 3.")
+
+	print("* Opening file...")
 
 	f = open(filename, 'w+')
 
+	print("* Generating strings...")
+
 	printAllKLength(strings, k) 
 	
+	print("* Done printing strings.")
+	print("* Finishing and saving...")
+
 	f.close()
 
 	with open(filename, 'r') as fin:
 		data = fin.read().splitlines(True)
 	with open(filename, 'w') as fout:
 		fout.writelines(data[1:])
+	
+	print("* Done.")
 
 # Copyright © 2019 Brendan Hersh. All rights reserved.
 # Forked from x's article (https://www.geeksforgeeks.org/print-all-combinations-of-given-length/)
