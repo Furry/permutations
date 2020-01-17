@@ -19,7 +19,7 @@ Download the latest version of Python [here](https://www.python.org/downloads/).
 
 Press the 'Download as ZIP' file above, or clone this repo in your favorite terminal using:
 ```shell
-git clone https://github.com/bdnh/permutations.git
+git clone https://github.com/cyb/permutations.git
 ```
 
 Open `permutations.py` with a text editor and change the variables from lines 23-29 to your desired preferences. *Note: if the output file name does not already exist, it will be created. Do not use an existing text file or risk data loss.*
